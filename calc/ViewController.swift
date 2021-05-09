@@ -20,33 +20,33 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		initButtom()
-		initLabel()
+		configurationLabel()
 	}
 	
 	// MARK:- Инициализация интрефейса
 	private func  initButtom(){
-		button(number: "/", valueLeft: 295, valueTop: 210)
-		button(number: "X", valueLeft: 295, valueTop: 305)
-		button(number: "-", valueLeft: 295, valueTop: 400)
-		button(number: "+", valueLeft: 200, valueTop: 495)
+		configurationButton(number: "/", valueLeft: 295, valueTop: 210)
+		configurationButton(number: "X", valueLeft: 295, valueTop: 305)
+		configurationButton(number: "-", valueLeft: 295, valueTop: 400)
+		configurationButton(number: "+", valueLeft: 200, valueTop: 495)
 		
-		button(number: "=", valueLeft: 295, valueTop: 495)
-		button(number: ".", valueLeft: 105, valueTop: 495)
-		button(number: "C", valueLeft: 295, valueTop: 595)
+		configurationButton(number: "=", valueLeft: 295, valueTop: 495)
+		configurationButton(number: ".", valueLeft: 105, valueTop: 495)
+		configurationButton(number: "C", valueLeft: 295, valueTop: 595)
 		
-		button(number: "0", valueLeft: 10, valueTop: 495)
-		button(number: "1", valueLeft: 10, valueTop: 400)
-		button(number: "2", valueLeft: 105, valueTop: 400)
-		button(number: "3", valueLeft: 200, valueTop: 400)
-		button(number: "4", valueLeft: 10, valueTop: 305)
-		button(number: "5", valueLeft: 105, valueTop: 305)
-		button(number: "6", valueLeft: 200, valueTop: 305)
-		button(number: "7", valueLeft: 10, valueTop: 210)
-		button(number: "8", valueLeft: 105, valueTop: 210)
-		button(number: "9", valueLeft: 200, valueTop: 210)
+		configurationButton(number: "0", valueLeft: 10, valueTop: 495)
+		configurationButton(number: "1", valueLeft: 10, valueTop: 400)
+		configurationButton(number: "2", valueLeft: 105, valueTop: 400)
+		configurationButton(number: "3", valueLeft: 200, valueTop: 400)
+		configurationButton(number: "4", valueLeft: 10, valueTop: 305)
+		configurationButton(number: "5", valueLeft: 105, valueTop: 305)
+		configurationButton(number: "6", valueLeft: 200, valueTop: 305)
+		configurationButton(number: "7", valueLeft: 10, valueTop: 210)
+		configurationButton(number: "8", valueLeft: 105, valueTop: 210)
+		configurationButton(number: "9", valueLeft: 200, valueTop: 210)
 	}
 	
-	private func initLabel() {
+	private func configurationLabel() {
 		label.text = "0"
 		label.backgroundColor = UIColor.blue
 		label.font = UIFont.systemFont(ofSize: 40)
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
 		}
 	}
 	
-	func button(number:String, valueLeft: Int, valueTop:Int){
+	func configurationButton(number:String, valueLeft: Int, valueTop:Int){
 		let button = UIButton()
 		button.setTitle(number, for: .normal)
 		button.backgroundColor = UIColor.orange
